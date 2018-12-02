@@ -1,10 +1,11 @@
 
+  
 ### Escuela Colombiana de Ingeniería
 ### Arquiecturas de Software
 
-## Construción de un cliente 'grueso' con un API REST, HTML5, Javascript y CSS3. Parte I.
+## Laboratorio construción de un cliente 'grueso' con un API REST, HTML5, Javascript y CSS3. Parte I.
 
-### Trabajo individual o en parejas. A quienes tuvieron malos resultados en el parcial anterior se les recomienda hacerlo individualmente.
+### Descripción
 
 ![](img/mock.png)
 
@@ -13,11 +14,11 @@
 * Al seleccionar uno de los planos, se debe mostrar el dibujo del mismo. Por ahora, el dibujo será simplemente una secuencia de segmentos de recta realizada en el mismo orden en el que vengan los puntos.
 
 
-## Ajustes Backend
+### Ajustes Backend
 
 1. Incluya dentro de las dependencias de Gradle (build.gradle) los 'webjars' de jQuery y Bootstrap (esto permite tener localmente dichas librerías de JavaScript al momento de construír el proyecto):
 
-    ```
+    ``` 
     dependencies { 
 		...
 		compile group: 'org.webjars', name: 'webjars-locator', version: '0.14'
@@ -26,7 +27,7 @@
     }               
     ```
 
-## Front-End - Vistas
+### Front-End - Vistas
 
 1. Cree el directorio donde residirá la aplicación JavaScript. Como se está usando SpringBoot, la ruta para poner en el mismo contenido estático (páginas Web estáticas, aplicaciones HTML5/JS, etc) es:  
 
@@ -57,7 +58,7 @@
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
 
-## Front-End - Lógica
+### Front-End - Lógica
 
 1. Ahora, va a crear un Módulo JavaScript que, a manera de controlador, mantenga los estados y ofrezca las operaciones requeridas por la vista. Para esto tenga en cuenta el [patrón Módulo de JavaScript](https://toddmotto.com/mastering-the-module-pattern/), y cree un módulo en la ruta static/js/app.js .
 
@@ -88,7 +89,7 @@
 
 6. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un usuario existente, se cargue el listado del mismo.
 
-## Para la próxima semana
+### Para la próxima semana
 
 8. A la página, agregue un [elemento de tipo Canvas](https://www.w3schools.com/html/html5_canvas.asp), con su respectivo identificador. Haga que sus dimensiones no sean demasiado grandes para dejar espacio para los otros componentes, pero lo suficiente para poder 'dibujar' los planos.
 
